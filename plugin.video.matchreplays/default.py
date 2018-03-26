@@ -99,7 +99,7 @@ def PlayVideo(url):
 
     if URL:
        listitem = xbmcgui.ListItem(name,iconImage='DefaultVideo.png',thumbnailImage=iconimage)
-       xbmc.Player(xbmc.PLAYER_CORE_DVDPLAYER).play(URL,listitem)
+       xbmc.Player().play(URL,listitem)
     else:
        dialog = xbmcgui.Dialog()
        dialog.ok("[COLOR red]Bummer !![/COLOR]", '','Cannot Resolve Video !!', '')
